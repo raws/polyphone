@@ -1,0 +1,86 @@
+{
+  "comparison": {
+    "result": {
+      "score": "0.23987704515457",
+      "artists": {
+        "artist": [
+          {
+            "name": "Daft Punk",
+            "url": "http://www.last.fm/music/Daft+Punk",
+            "image": [
+              { "#text": "http://userserve-ak.last.fm/serve/126/10923145.png", "size": "large" },
+              { "#text": "http://userserve-ak.last.fm/serve/64/10923145.png", "size": "medium" },
+              { "#text": "http://userserve-ak.last.fm/serve/34/10923145.png", "size": "small" },
+              { "#text": "http://userserve-ak.last.fm/serve/252/10923145.png", "size": "extralarge" }
+            ]
+          },
+          {
+            "name": "Rusko",
+            "url": "http://www.last.fm/music/Rusko",
+            "image": [
+              { "#text": "http://userserve-ak.last.fm/serve/126/33389949.jpg", "size": "large" },
+              { "#text": "http://userserve-ak.last.fm/serve/64/33389949.jpg", "size": "medium" },
+              { "#text": "http://userserve-ak.last.fm/serve/34/33389949.jpg", "size": "small" },
+              { "#text": "http://userserve-ak.last.fm/serve/252/33389949.jpg", "size": "extralarge" }
+            ]
+          },
+          {
+            "name": "Queens of the Stone Age",
+            "url": "http://www.last.fm/music/Queens+of+the+Stone+Age",
+            "image": [
+              { "#text": "http://userserve-ak.last.fm/serve/126/585787.jpg", "size": "large" },
+              { "#text": "http://userserve-ak.last.fm/serve/64/585787.jpg", "size": "medium" },
+              { "#text": "http://userserve-ak.last.fm/serve/34/585787.jpg", "size": "small" },
+              { "#text": "http://userserve-ak.last.fm/serve/252/585787.jpg", "size": "extralarge" }
+            ]
+          },
+          {
+            "name": "Led Zeppelin",
+            "url": "http://www.last.fm/music/Led+Zeppelin",
+            "image": [
+              { "#text": "http://userserve-ak.last.fm/serve/126/279035.jpg", "size": "large" },
+              { "#text": "http://userserve-ak.last.fm/serve/64/279035.jpg", "size": "medium" },
+              { "#text": "http://userserve-ak.last.fm/serve/34/279035.jpg", "size": "small" },
+              { "#text": "http://userserve-ak.last.fm/serve/252/279035.jpg", "size": "extralarge" }
+            ]
+          },
+          {
+            "name": "The Qemists",
+            "url": "http://www.last.fm/music/The+Qemists",
+            "image": [
+              { "#text": "http://userserve-ak.last.fm/serve/126/45148753.jpg", "size": "large" },
+              { "#text": "http://userserve-ak.last.fm/serve/64/45148753.jpg", "size": "medium" },
+              { "#text": "http://userserve-ak.last.fm/serve/34/45148753.jpg", "size": "small" },
+              { "#text": "http://userserve-ak.last.fm/serve/252/45148753.jpg", "size": "extralarge" }
+            ]
+          }
+        ],
+        "@attr": { "matches": "10" }
+      }
+    },
+    "input": {
+      "user": [
+        {
+          "name": "rawsosaurus",
+          "url": "http://www.last.fm/user/rawsosaurus",
+          "image": [
+            { "#text": "http://userserve-ak.last.fm/serve/126/34664695.png", "size": "large" },
+            { "#text": "http://userserve-ak.last.fm/serve/64/34664695.png", "size": "medium" },
+            { "#text": "http://userserve-ak.last.fm/serve/34/34664695.png", "size": "small" },
+            { "#text": "http://userserve-ak.last.fm/serve/252/34664695.png", "size": "extralarge" }
+          ]
+        },
+        {
+          "name": "Corganon",
+          "url": "http://www.last.fm/user/Corganon",
+          "image": [
+            { "#text": "", "size": "large" },
+            { "#text": "", "size": "medium" },
+            { "#text": "", "size": "small" },
+            { "#text": "", "size": "extralarge" }
+          ]
+        }
+      ]
+    }
+  }
+}

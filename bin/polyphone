@@ -1,0 +1,30 @@
+#!/usr/bin/env ruby
+$:.unshift File.dirname(__FILE__) + '../lib'
+require 'polyphone'
+require 'active_support/cache'
+require 'fileutils'
+require 'logger'
+require 'thor'
+
+module Polyphone
+  class Cli < Thor
+    desc 'graph GROUP PATH', "Generate a graph of GROUP's musical compatibility"
+    def graph(group_name, output_path)
+      client = Polyphone::Client.new
+      client.logger = Logger.new(STDOUT)
+      client.min_seconds_between_requests = 1
+
+      cache_path = File.dirname(output_path) + '/cache'
+      FileUtils.mkdir_p(cache_path)
+      client.cache = ActiveSupport::Cache::FileStore.new(cache_path)
+
+      group = Polyphone::Group.new(group_name)
+      group.client = client
+
+      output_path = File.expand_path(output_path)
+      group.write_graph(output_path)
+    end
+  end
+end
+
+Polyphone::Cli.start(ARGV)
