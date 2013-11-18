@@ -20,11 +20,11 @@ module Polyphone
 
     def add_edges_between_user_nodes
       users_who_have_scrobbled.combination(2) do |first_user, second_user|
-        compatibility = compatibility_between(first_user, second_user)
+        compatibility = first_user.compatibility_with(second_user)
 
         if compatibility > 0.33
           options = {
-            color: graph_edge_color(compatibility),
+            color: edge_color(compatibility),
             dir: 'none',
             penwidth: (compatibility * 3).ceil
           }
@@ -40,15 +40,10 @@ module Polyphone
       end
     end
 
-    def compatibility_between(first_user, second_user)
-      first_user.compatibility_with(second_user)
-    end
-
     def configure_graph_style
       graph.node[:color] = 'black'
       graph.node[:shape] = 'ellipse'
 
-      graph.edge[:color] = 'black'
       graph.edge[:label] = ''
       graph.edge[:style] = 'filled'
       graph.edge[:weight] = '1'
@@ -72,7 +67,7 @@ module Polyphone
       @graph
     end
 
-    def graph_edge_color(compatibility)
+    def edge_color(compatibility)
       alpha = 255 * compatibility
       '#%02x%02x%02x%02x' % [255, 135, 67, alpha]
     end
