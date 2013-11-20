@@ -1,0 +1,16 @@
+polyphone: Last.fm group visualization
+======================================
+
+This is a work in progress!
+
+Check out polyphone:
+$ git clone https://github.com/raws/polyphone.git
+
+Run the binary:
+bin/polyphone graph thelevelup ~/Desktop/levelup.svg
+
+Polyphone will generate a cool graph in the format of your choice.
+
+-----
+(c) 2013 Ross Paffett
+MIT licensed
